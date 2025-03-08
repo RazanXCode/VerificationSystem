@@ -1,17 +1,37 @@
-<div class="upload">
-    <h2>Upload Document</h2>
-    <form (ngSubmit)="uploadDocument()">
-      <div>
-        <label for="name">Document Name:</label>
-        <input type="text" id="name" [(ngModel)]="document.name" name="name" required />
-      </div>
-      <div>
-        <label for="file">Document File:</label>
-        <input type="file" id="file" (change)="onFileChange($event)" required />
-      </div>
-      <button type="submit" [disabled]="!document.name || !document.file">Upload</button>
-    </form>
-    <p>{{ message }}</p>
-  </div>
-  
- 
+<div class="container mt-4">
+  <h2 class="text-center mb-4">Upload Document</h2>
+  <form (ngSubmit)="uploadDocument()">
+    <div class="mb-3">
+      <label for="name" class="form-label">Document Name:</label>
+      <input
+        type="text"
+        id="name"
+        class="form-control"
+        [(ngModel)]="document.name"
+        name="name"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label for="file" class="form-label">Document File:</label>
+      <input
+        type="file"
+        id="file"
+        class="form-control"
+        (change)="onFileChange($event)"
+        required
+      />
+    </div>
+
+    <!-- Show errors if any -->
+    <div *ngIf="errors.length > 0" class="alert alert-danger">
+      <ul>
+        <li *ngFor="let error of errors">{{ error }}</li>
+      </ul>
+    </div>
+
+    <button type="submit" class="btn btn-primary" [disabled]="!document.name || !document.file">Upload</button>
+  </form>
+
+  <p class="mt-3">{{ message }}</p>
+</div>

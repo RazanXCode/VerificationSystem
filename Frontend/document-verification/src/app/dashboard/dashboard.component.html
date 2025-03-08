@@ -1,18 +1,21 @@
-<div class="dashboard">
-    <h2>Document Detailes Dashboard</h2>
-    <div *ngIf="documents.length > 0; else noDocuments">
-      <ul>
-        <li *ngFor="let doc of documents">
-          <h3>{{ doc.name }}</h3>
-          <p>Title: {{ doc.title }}</p>
-          <p>Verification Code: {{ doc.verificationCode }}</p>
-          <p>Created on: {{ doc.createdAt | date }}</p>
-          <p>Status: {{ doc.status }}</p>
+<div class="dashboard container mt-5">
+  <h2 class="text-center mb-4">Document Details Dashboard</h2>
+  <div *ngIf="documents.length > 0; else noDocuments" class="card shadow">
+    <div class="card-body">
+      <ul class="list-group list-group-flush">
+        <li *ngFor="let doc of documents" class="list-group-item">
+          <h3 class="card-title">{{ doc.name }}</h3>
+          <p class="card-text"><strong>Title:</strong> {{ doc.title }}</p>
+          <p class="card-text"><strong>Verification Code:</strong> {{ doc.verificationCode }}</p>
+          <p class="card-text"><strong>Created on:</strong> {{ doc.createdAt | date }}</p>
+          <p class="card-text"><strong>Status:</strong> {{ doc.status }}</p>
         </li>
       </ul>
     </div>
-    <ng-template #noDocuments>
-      <p>No documents found.</p>
-    </ng-template>
   </div>
-  
+  <ng-template #noDocuments>
+    <div class="alert alert-warning text-center" role="alert">
+      No documents found.
+    </div>
+  </ng-template>
+</div>

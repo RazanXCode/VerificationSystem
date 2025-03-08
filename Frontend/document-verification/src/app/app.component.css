@@ -1,0 +1,36 @@
+/* Style for the nav container */
+nav {
+    background-color: #343a40; /* Dark background color */
+    padding: 10px 20px; /* Add some padding */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out the links */
+    align-items: center; /* Center items vertically */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  }
+  
+  /* Style for the links */
+  nav a {
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Set font size */
+    margin: 0 10px; /* Add spacing between links */
+    padding: 8px 12px; /* Add padding for clickable area */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  /* Hover effect for links */
+  nav a:hover {
+    background-color: #495057; /* Darker background on hover */
+  }
+  
+  /* Active link style */
+  nav a.active {
+    background-color: #007bff; /* Blue background for active link */
+    color: white; /* White text for active link */
+  }
+  
+  /* Style for the router outlet */
+  router-outlet {
+    margin-top: 20px; /* Add some space below the navbar */
+  }
