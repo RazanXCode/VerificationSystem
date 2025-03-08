@@ -3,21 +3,21 @@ import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { HttpClientModule } from '@angular/common/http';  // ✅ Import HttpClientModule
-//import {store} './redux/actions';  // Import Redux store
-//import { uploadDocument, uploadSuccess, uploadFailure, setErrors } from './redux/actions';  // Import Redux actions
+import { HttpClientModule } from '@angular/common/http';  
+import {store} './redux/actions';  // Import Redux store
+import { uploadDocument, uploadSuccess, uploadFailure, setErrors } from './redux/actions';  // Import Redux actions
 
 @Component({
   selector: 'app-document-upload',
   standalone: true,
-  imports: [CommonModule, FormsModule, HttpClientModule],  // ✅ Add HttpClientModule
+  imports: [CommonModule, FormsModule, HttpClientModule],  
   templateUrl: './document-upload.component.html',
   styleUrls: ['./document-upload.component.css']
 })
 export class DocumentUploadComponent {
   document: any = { name: '', file: null };
   message: string = '';
-  errors: string[] = [];  // To hold error messages
+  errors: string[] = []; 
 
   constructor(private http: HttpClient) {}
 
@@ -44,7 +44,7 @@ export class DocumentUploadComponent {
       }
     }
         // Dispatch errors to Redux
-   // store.dispatch(setErrors(this.errors));
+    store.dispatch(setErrors(this.errors));
 
 
     // If there are validation errors, don't proceed with upload and show error message
@@ -61,7 +61,7 @@ export class DocumentUploadComponent {
   
    
     // Dispatch the upload action to Redux
-    //store.dispatch(uploadDocument(formData));
+    store.dispatch(uploadDocument(formData));
 
     this.http.post('http://localhost:5075/api/documents', formData).subscribe({
       next: (response) => this.message = 'Document uploaded successfully!',
