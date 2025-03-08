@@ -1,0 +1,28 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/DocumentVerification/uploads/SSMS.8t2t4yovyo.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\SSMS.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"8t2t4yovyo"},{"Name":"integrity","Value":"sha256-hMBFBmD43pekHVWrlAejwVQfODv91xYM44kZ/wLOdBg="},{"Name":"label","Value":"_content/DocumentVerification/uploads/SSMS.pdf"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"57138"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022hMBFBmD43pekHVWrlAejwVQfODv91xYM44kZ/wLOdBg=\u0022"},{"Name":"Last-Modified","Value":"Sat, 08 Mar 2025 04:48:08 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DocumentVerification/uploads/SSMS.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\SSMS.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-hMBFBmD43pekHVWrlAejwVQfODv91xYM44kZ/wLOdBg="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"57138"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022hMBFBmD43pekHVWrlAejwVQfODv91xYM44kZ/wLOdBg=\u0022"},{"Name":"Last-Modified","Value":"Sat, 08 Mar 2025 04:48:08 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DocumentVerification/uploads/UserPosts-Report.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\UserPosts-Report.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-\u002BxKRZll4Syty1mY2yOcP\u002BDQjt3SR8vCqyGs9RDMMQJo="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2930678"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022\u002BxKRZll4Syty1mY2yOcP\u002BDQjt3SR8vCqyGs9RDMMQJo=\u0022"},{"Name":"Last-Modified","Value":"Sat, 08 Mar 2025 04:50:15 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DocumentVerification/uploads/UserPosts-Report.rw2x6wcm9p.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\UserPosts-Report.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"rw2x6wcm9p"},{"Name":"integrity","Value":"sha256-\u002BxKRZll4Syty1mY2yOcP\u002BDQjt3SR8vCqyGs9RDMMQJo="},{"Name":"label","Value":"_content/DocumentVerification/uploads/UserPosts-Report.pdf"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2930678"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022\u002BxKRZll4Syty1mY2yOcP\u002BDQjt3SR8vCqyGs9RDMMQJo=\u0022"},{"Name":"Last-Modified","Value":"Sat, 08 Mar 2025 04:50:15 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>

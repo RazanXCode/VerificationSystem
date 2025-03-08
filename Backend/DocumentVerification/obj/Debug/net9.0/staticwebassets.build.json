@@ -1,0 +1,228 @@
+{
+  "Version": 1,
+  "Hash": "OdXCp8SN33GmkAG/O6TMZ2DGrPK2MPnl8KQWLp88Eyo=",
+  "Source": "DocumentVerification",
+  "BasePath": "_content/DocumentVerification",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "DocumentVerification\\wwwroot",
+      "Source": "DocumentVerification",
+      "ContentRoot": "C:\\Users\\razan\\verficationSystem\\Backend\\DocumentVerification\\wwwroot\\",
+      "BasePath": "_content/DocumentVerification",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\razan\\verficationSystem\\Backend\\DocumentVerification\\wwwroot\\uploads\\SSMS.pdf",
+      "SourceId": "DocumentVerification",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\razan\\verficationSystem\\Backend\\DocumentVerification\\wwwroot\\",
+      "BasePath": "_content/DocumentVerification",
+      "RelativePath": "uploads/SSMS#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8t2t4yovyo",
+      "Integrity": "hMBFBmD43pekHVWrlAejwVQfODv91xYM44kZ/wLOdBg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\SSMS.pdf"
+    },
+    {
+      "Identity": "C:\\Users\\razan\\verficationSystem\\Backend\\DocumentVerification\\wwwroot\\uploads\\UserPosts-Report.pdf",
+      "SourceId": "DocumentVerification",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\razan\\verficationSystem\\Backend\\DocumentVerification\\wwwroot\\",
+      "BasePath": "_content/DocumentVerification",
+      "RelativePath": "uploads/UserPosts-Report#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rw2x6wcm9p",
+      "Integrity": "+xKRZll4Syty1mY2yOcP+DQjt3SR8vCqyGs9RDMMQJo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\UserPosts-Report.pdf"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "uploads/SSMS.8t2t4yovyo.pdf",
+      "AssetFile": "C:\\Users\\razan\\verficationSystem\\Backend\\DocumentVerification\\wwwroot\\uploads\\SSMS.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "57138"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hMBFBmD43pekHVWrlAejwVQfODv91xYM44kZ/wLOdBg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 04:48:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8t2t4yovyo"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/SSMS.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hMBFBmD43pekHVWrlAejwVQfODv91xYM44kZ/wLOdBg="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/SSMS.pdf",
+      "AssetFile": "C:\\Users\\razan\\verficationSystem\\Backend\\DocumentVerification\\wwwroot\\uploads\\SSMS.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "57138"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hMBFBmD43pekHVWrlAejwVQfODv91xYM44kZ/wLOdBg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 04:48:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hMBFBmD43pekHVWrlAejwVQfODv91xYM44kZ/wLOdBg="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/UserPosts-Report.pdf",
+      "AssetFile": "C:\\Users\\razan\\verficationSystem\\Backend\\DocumentVerification\\wwwroot\\uploads\\UserPosts-Report.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2930678"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+xKRZll4Syty1mY2yOcP+DQjt3SR8vCqyGs9RDMMQJo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 04:50:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+xKRZll4Syty1mY2yOcP+DQjt3SR8vCqyGs9RDMMQJo="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/UserPosts-Report.rw2x6wcm9p.pdf",
+      "AssetFile": "C:\\Users\\razan\\verficationSystem\\Backend\\DocumentVerification\\wwwroot\\uploads\\UserPosts-Report.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2930678"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+xKRZll4Syty1mY2yOcP+DQjt3SR8vCqyGs9RDMMQJo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 04:50:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rw2x6wcm9p"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/UserPosts-Report.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+xKRZll4Syty1mY2yOcP+DQjt3SR8vCqyGs9RDMMQJo="
+        }
+      ]
+    }
+  ]
+}

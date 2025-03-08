@@ -1,0 +1,170 @@
+{
+  "Version": 1,
+  "ManifestType": "Build",
+  "Endpoints": [
+    {
+      "Route": "uploads/SSMS.8t2t4yovyo.pdf",
+      "AssetFile": "uploads/SSMS.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "57138"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hMBFBmD43pekHVWrlAejwVQfODv91xYM44kZ/wLOdBg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 04:48:08 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8t2t4yovyo"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hMBFBmD43pekHVWrlAejwVQfODv91xYM44kZ/wLOdBg="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/SSMS.pdf"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/SSMS.pdf",
+      "AssetFile": "uploads/SSMS.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "57138"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hMBFBmD43pekHVWrlAejwVQfODv91xYM44kZ/wLOdBg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 04:48:08 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hMBFBmD43pekHVWrlAejwVQfODv91xYM44kZ/wLOdBg="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/UserPosts-Report.pdf",
+      "AssetFile": "uploads/UserPosts-Report.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2930678"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+xKRZll4Syty1mY2yOcP+DQjt3SR8vCqyGs9RDMMQJo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 04:50:15 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+xKRZll4Syty1mY2yOcP+DQjt3SR8vCqyGs9RDMMQJo="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/UserPosts-Report.rw2x6wcm9p.pdf",
+      "AssetFile": "uploads/UserPosts-Report.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2930678"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+xKRZll4Syty1mY2yOcP+DQjt3SR8vCqyGs9RDMMQJo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 04:50:15 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rw2x6wcm9p"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+xKRZll4Syty1mY2yOcP+DQjt3SR8vCqyGs9RDMMQJo="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/UserPosts-Report.pdf"
+        }
+      ]
+    }
+  ]
+}

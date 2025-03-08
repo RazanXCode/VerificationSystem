@@ -1,0 +1,6 @@
+@DocumentVerification_HostAddress = http://localhost:5075
+
+GET {{DocumentVerification_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

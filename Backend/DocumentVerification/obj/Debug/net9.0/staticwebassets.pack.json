@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\razan\\verficationSystem\\Backend\\DocumentVerification\\wwwroot\\uploads\\SSMS.pdf",
+      "PackagePath": "staticwebassets\\uploads\\SSMS.pdf"
+    },
+    {
+      "Id": "C:\\Users\\razan\\verficationSystem\\Backend\\DocumentVerification\\wwwroot\\uploads\\UserPosts-Report.pdf",
+      "PackagePath": "staticwebassets\\uploads\\UserPosts-Report.pdf"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.DocumentVerification.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.DocumentVerification.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.DocumentVerification.props",
+      "PackagePath": "build\\DocumentVerification.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.DocumentVerification.props",
+      "PackagePath": "buildMultiTargeting\\DocumentVerification.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.DocumentVerification.props",
+      "PackagePath": "buildTransitive\\DocumentVerification.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
