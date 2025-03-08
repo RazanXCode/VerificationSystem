@@ -1,105 +1,4 @@
-// using Microsoft.EntityFrameworkCore;
-// using DocumentVerification.Data;
-// using Microsoft.Data.SqlClient;
-// using Dapper;
-// using DocumentVerification.Models;
 
-// var builder = WebApplication.CreateBuilder(args);
-
-// // Add services to the container.
-// builder.Services.AddDbContext<MyAppContext>(options =>
-//     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-
-// // Register SqlConnection for Dapper
-// builder.Services.AddTransient<SqlConnection>(_ =>
-//     new SqlConnection(builder.Configuration.GetConnectionString("DefaultConnection")));
-
-
-// var app = builder.Build();
-
-// //To allow angular access the api endpoints
-// builder.Services.AddCors(options =>
-// {
-//     options.AddPolicy("AllowAngularApp",
-//         policy =>
-//         {
-//             policy.WithOrigins("http://localhost::52410/")
-//                   .AllowAnyHeader()
-//                   .AllowAnyMethod();
-//         });
-// });
-
-
-
-
-// // Populate data to database 
-// using (var scope = app.Services.CreateScope())
-// {
-//     var context = scope.ServiceProvider.GetRequiredService<MyAppContext>();
-//     context.Database.Migrate(); // Ensures the database is created and up to date
-//     MyAppContext.Seed(context); // Call the Seed method
-// }
-
-// // Configure the HTTP request pipeline.
-// if (app.Environment.IsDevelopment())
-// {
-//     app.MapOpenApi();
-// }
-
-// app.UseHttpsRedirection();
-// app.UseCors("AllowAngularApp");
-
-// // POST /api/documents → Upload a document & generate a unique VerificationCode
-// app.MapPost("/api/documents", async (MyAppContext db, Document document) =>
-// {
-//     document.VerificationCode = Guid.NewGuid().ToString().Substring(0, 8); // Generate a unique code
-//     document.CreatedAt = DateTime.Now;
-
-//     db.Documents.Add(document);
-//     await db.SaveChangesAsync();
-
-//     return Results.Created($"/api/documents/{document.Id}", document);
-// });
-
-// // GET /api/documents/{id} → Retrieve document details
-// app.MapGet("/api/documents/{id}", async (MyAppContext db, int id) =>
-// {
-//     var document = await db.Documents.FindAsync(id);
-//     return document is not null ? Results.Ok(document) : Results.NotFound("Document not found");
-// });
-
-
-// // POST /api/verify → Verify a document using Dapper
-// app.MapPost("/api/verify", async (HttpContext httpContext, SqlConnection conn) =>
-// {
-//     var request = await httpContext.Request.ReadFromJsonAsync<VerificationRequest>();
-//     if (request is null)
-//         return Results.BadRequest("Invalid request data");
-
-//     // Query to get the document's verification status and count by matching VerificationCode
-//     string query = @"
-//         SELECT Status
-//         FROM Documents 
-//         WHERE Id = @Id AND VerificationCode = @VerificationCode";
-
-//     var status = await conn.ExecuteScalarAsync<string>(query, new { request.Id, request.VerificationCode });
-
-//     if (status == null)
-//         return Results.Json(new { message = "Invalid verification code or document not found." }, statusCode: 404); // Not Found
-
-//     if (status == "Verified")
-//         return Results.Ok("Document verified successfully!");
-
-//     return Results.Json(new { message = "Document verification failed." }, statusCode: 401); // Unauthorized
-// });
-
-
-
-// // Run the application
-// app.Run();
-
-// // Request model for document verification
-// record VerificationRequest(int Id, string VerificationCode);
 
 using Microsoft.EntityFrameworkCore;
 using DocumentVerification.Data;
@@ -155,17 +54,6 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 // POST /api/documents → Upload a document & generate a unique VerificationCode
-// app.MapPost("/api/documents", async (MyAppContext db, Document document) =>
-// {
-//     document.VerificationCode = Guid.NewGuid().ToString().Substring(0, 8); // Generate a unique code
-//     document.CreatedAt = DateTime.Now;
-
-//     db.Documents.Add(document);
-//     await db.SaveChangesAsync();
-
-//     return Results.Created($"/api/documents/{document.Id}", document);
-// });
-
 app.MapPost("/api/documents", async (MyAppContext db, HttpContext httpContext) =>
 {
     // Read the form data from the request
@@ -228,11 +116,6 @@ app.MapPost("/api/documents", async (MyAppContext db, HttpContext httpContext) =
 
 
 // GET /api/documents/{id} → Retrieve document details
-// app.MapGet("/api/documents/{id}", async (MyAppContext db, int id) =>
-// {
-//     var document = await db.Documents.FindAsync(id);
-//     return document is not null ? Results.Ok(document) : Results.NotFound("Document not found");
-// });
 app.MapGet("/api/documents/{userId}", async (MyAppContext db, int userId) =>
 {
     var documents = await db.Documents.Where(d => d.UserId == userId).ToListAsync();
