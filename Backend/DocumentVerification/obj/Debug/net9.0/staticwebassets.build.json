@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jeL9CTN2NUmtPyynjz7ULAnG+HHkz4Ow2Gf7Mxc9Sk4=",
+  "Hash": "FMG7PP1N6WD5W1NUjO6qKvq/i+hXWFikY5D72veoRMk=",
   "Source": "DocumentVerification",
   "BasePath": "_content/DocumentVerification",
   "Mode": "Default",
@@ -36,6 +36,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\Ecommerce-main.zip"
+    },
+    {
+      "Identity": "C:\\Users\\razan\\verficationSystem\\Backend\\DocumentVerification\\wwwroot\\uploads\\Graduation Certification.pdf",
+      "SourceId": "DocumentVerification",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\razan\\verficationSystem\\Backend\\DocumentVerification\\wwwroot\\",
+      "BasePath": "_content/DocumentVerification",
+      "RelativePath": "uploads/Graduation Certification#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "azoto9ya20",
+      "Integrity": "SmDzTu5QBTr31O3btjWD38s5XeyiNduknFsYuTUcLrQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\Graduation Certification.pdf"
     },
     {
       "Identity": "C:\\Users\\razan\\verficationSystem\\Backend\\DocumentVerification\\wwwroot\\uploads\\Report.pdf",
@@ -181,6 +202,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-29AhZz4qAKPAyKaYvODh2ZGttsVZIbQDXG1DDpLks/A="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/Graduation Certification.azoto9ya20.pdf",
+      "AssetFile": "C:\\Users\\razan\\verficationSystem\\Backend\\DocumentVerification\\wwwroot\\uploads\\Graduation Certification.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3128348"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SmDzTu5QBTr31O3btjWD38s5XeyiNduknFsYuTUcLrQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 14:12:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "azoto9ya20"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/Graduation Certification.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SmDzTu5QBTr31O3btjWD38s5XeyiNduknFsYuTUcLrQ="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/Graduation Certification.pdf",
+      "AssetFile": "C:\\Users\\razan\\verficationSystem\\Backend\\DocumentVerification\\wwwroot\\uploads\\Graduation Certification.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3128348"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SmDzTu5QBTr31O3btjWD38s5XeyiNduknFsYuTUcLrQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 14:12:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SmDzTu5QBTr31O3btjWD38s5XeyiNduknFsYuTUcLrQ="
         }
       ]
     },

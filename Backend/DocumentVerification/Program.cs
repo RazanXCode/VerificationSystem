@@ -6,8 +6,8 @@ using Microsoft.Data.SqlClient;
 using Dapper;
 using DocumentVerification.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Http; // Required for IFormFile
-using System.IO; // Required for file handling
+using Microsoft.AspNetCore.Http; 
+using System.IO;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -26,7 +26,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowAngularApp",
         policy =>
         {
-            policy.WithOrigins("http://localhost:4200") // Corrected port number (Angular default is 4200)
+            policy.WithOrigins("http://localhost:4200") 
                   .AllowAnyHeader()
                   .AllowAnyMethod();
         });
@@ -34,15 +34,15 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
-// Use CORS policy
+
 app.UseCors("AllowAngularApp");
 
 // Populate data to database 
 using (var scope = app.Services.CreateScope())
 {
     var context = scope.ServiceProvider.GetRequiredService<MyAppContext>();
-    context.Database.Migrate(); // Ensures the database is created and up to date
-    MyAppContext.Seed(context); // Call the Seed method
+    context.Database.Migrate(); 
+    MyAppContext.Seed(context); 
 }
 
 // Configure the HTTP request pipeline.
@@ -58,9 +58,9 @@ app.MapPost("/api/documents", async (MyAppContext db, HttpContext httpContext) =
 {
     // Read the form data from the request
     var form = await httpContext.Request.ReadFormAsync();
-    var file = form.Files["file"]; // Get the uploaded file
-    var name = form["name"]; // Get the document name
-    var userId = form["userId"]; // Get the user ID (if provided)
+    var file = form.Files["file"]; 
+    var name = form["name"]; 
+    var userId = form["userId"]; 
 
     if (file == null || string.IsNullOrEmpty(name))
     {
@@ -112,18 +112,12 @@ app.MapPost("/api/documents", async (MyAppContext db, HttpContext httpContext) =
 });
 
 
-
-
-
 // GET /api/documents/{id} → Retrieve document details
 app.MapGet("/api/documents/{userId}", async (MyAppContext db, int userId) =>
 {
     var documents = await db.Documents.Where(d => d.UserId == userId).ToListAsync();
     return documents.Any() ? Results.Ok(documents) : Results.NotFound("No documents found for this user.");
 });
-
-
-
 
 
 // POST /api/verify → Verify a document using Dapper
@@ -150,8 +144,8 @@ app.MapPost("/api/verify", async (HttpContext httpContext, SqlConnection conn) =
     return Results.Json(new { message = "Document verification failed." }, statusCode: 401); // Unauthorized
 });
 
-// Run the application
+
 app.Run();
 
-// Request model for document verification
+
 record VerificationRequest(int Id, string VerificationCode);

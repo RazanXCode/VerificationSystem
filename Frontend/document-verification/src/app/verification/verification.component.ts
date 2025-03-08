@@ -1,21 +1,21 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';  // For two-way data binding
+import { FormsModule } from '@angular/forms';  
 import { CommonModule } from '@angular/common';
-import { HttpClientModule } from '@angular/common/http'; // ✅ Import HttpClientModule
+import { HttpClientModule } from '@angular/common/http'; 
 
 @Component({
   selector: 'app-verification',
   standalone: true,
-  imports: [CommonModule, FormsModule, HttpClientModule], // ✅ Add HttpClientModule
+  imports: [CommonModule, FormsModule, HttpClientModule], 
   templateUrl: './verification.component.html',
   styleUrls: ['./verification.component.css']
 })
 export class VerificationComponent {
-  verification: any = { Id: '', VerificationCode: '' }; // ✅ Match the API's expected properties
+  verification: any = { Id: '', VerificationCode: '' }; 
   resultMessage: string = '';
 
-  constructor(private http: HttpClient) {} // ✅ HttpClient is now available
+  constructor(private http: HttpClient) {} 
 
   verifyDocument(): void {
     this.http.post('http://localhost:5075/api/verify', this.verification)

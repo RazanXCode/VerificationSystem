@@ -85,6 +85,88 @@
       ]
     },
     {
+      "Route": "uploads/Graduation Certification.azoto9ya20.pdf",
+      "AssetFile": "uploads/Graduation Certification.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3128348"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SmDzTu5QBTr31O3btjWD38s5XeyiNduknFsYuTUcLrQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 14:12:18 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "azoto9ya20"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SmDzTu5QBTr31O3btjWD38s5XeyiNduknFsYuTUcLrQ="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/Graduation Certification.pdf"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/Graduation Certification.pdf",
+      "AssetFile": "uploads/Graduation Certification.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3128348"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SmDzTu5QBTr31O3btjWD38s5XeyiNduknFsYuTUcLrQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 14:12:18 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SmDzTu5QBTr31O3btjWD38s5XeyiNduknFsYuTUcLrQ="
+        }
+      ]
+    },
+    {
       "Route": "uploads/Report.pdf",
       "AssetFile": "uploads/Report.pdf",
       "Selectors": [],

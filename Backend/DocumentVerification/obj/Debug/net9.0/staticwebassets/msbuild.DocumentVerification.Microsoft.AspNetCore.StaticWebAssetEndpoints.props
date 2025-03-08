@@ -12,6 +12,18 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-29AhZz4qAKPAyKaYvODh2ZGttsVZIbQDXG1DDpLks/A="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"567127"},{"Name":"Content-Type","Value":"application/x-zip-compressed"},{"Name":"ETag","Value":"\u002229AhZz4qAKPAyKaYvODh2ZGttsVZIbQDXG1DDpLks/A=\u0022"},{"Name":"Last-Modified","Value":"Sat, 08 Mar 2025 06:50:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DocumentVerification/uploads/Graduation Certification.azoto9ya20.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\Graduation Certification.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"azoto9ya20"},{"Name":"integrity","Value":"sha256-SmDzTu5QBTr31O3btjWD38s5XeyiNduknFsYuTUcLrQ="},{"Name":"label","Value":"_content/DocumentVerification/uploads/Graduation Certification.pdf"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3128348"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022SmDzTu5QBTr31O3btjWD38s5XeyiNduknFsYuTUcLrQ=\u0022"},{"Name":"Last-Modified","Value":"Sat, 08 Mar 2025 14:12:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DocumentVerification/uploads/Graduation Certification.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\Graduation Certification.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-SmDzTu5QBTr31O3btjWD38s5XeyiNduknFsYuTUcLrQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3128348"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022SmDzTu5QBTr31O3btjWD38s5XeyiNduknFsYuTUcLrQ=\u0022"},{"Name":"Last-Modified","Value":"Sat, 08 Mar 2025 14:12:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/DocumentVerification/uploads/Report.pdf">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\Report.pdf'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
