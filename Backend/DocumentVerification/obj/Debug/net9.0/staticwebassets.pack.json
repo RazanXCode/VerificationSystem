@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\razan\\verficationSystem\\Backend\\DocumentVerification\\wwwroot\\uploads\\Ecommerce-main.zip",
+      "PackagePath": "staticwebassets\\uploads\\Ecommerce-main.zip"
+    },
+    {
       "Id": "C:\\Users\\razan\\verficationSystem\\Backend\\DocumentVerification\\wwwroot\\uploads\\SSMS.pdf",
       "PackagePath": "staticwebassets\\uploads\\SSMS.pdf"
     },

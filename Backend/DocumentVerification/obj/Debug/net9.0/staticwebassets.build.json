@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "OdXCp8SN33GmkAG/O6TMZ2DGrPK2MPnl8KQWLp88Eyo=",
+  "Hash": "Vxgz4VOe+nB4XKgRGIVVvQyv05qbIklmjpCYOwng6MY=",
   "Source": "DocumentVerification",
   "BasePath": "_content/DocumentVerification",
   "Mode": "Default",
@@ -16,6 +16,27 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\razan\\verficationSystem\\Backend\\DocumentVerification\\wwwroot\\uploads\\Ecommerce-main.zip",
+      "SourceId": "DocumentVerification",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\razan\\verficationSystem\\Backend\\DocumentVerification\\wwwroot\\",
+      "BasePath": "_content/DocumentVerification",
+      "RelativePath": "uploads/Ecommerce-main#[.{fingerprint}]?.zip",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tedpz76xkf",
+      "Integrity": "29AhZz4qAKPAyKaYvODh2ZGttsVZIbQDXG1DDpLks/A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\Ecommerce-main.zip"
+    },
     {
       "Identity": "C:\\Users\\razan\\verficationSystem\\Backend\\DocumentVerification\\wwwroot\\uploads\\SSMS.pdf",
       "SourceId": "DocumentVerification",
@@ -60,6 +81,88 @@
     }
   ],
   "Endpoints": [
+    {
+      "Route": "uploads/Ecommerce-main.tedpz76xkf.zip",
+      "AssetFile": "C:\\Users\\razan\\verficationSystem\\Backend\\DocumentVerification\\wwwroot\\uploads\\Ecommerce-main.zip",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "567127"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-zip-compressed"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"29AhZz4qAKPAyKaYvODh2ZGttsVZIbQDXG1DDpLks/A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 06:50:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tedpz76xkf"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/Ecommerce-main.zip"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-29AhZz4qAKPAyKaYvODh2ZGttsVZIbQDXG1DDpLks/A="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/Ecommerce-main.zip",
+      "AssetFile": "C:\\Users\\razan\\verficationSystem\\Backend\\DocumentVerification\\wwwroot\\uploads\\Ecommerce-main.zip",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "567127"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-zip-compressed"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"29AhZz4qAKPAyKaYvODh2ZGttsVZIbQDXG1DDpLks/A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 06:50:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-29AhZz4qAKPAyKaYvODh2ZGttsVZIbQDXG1DDpLks/A="
+        }
+      ]
+    },
     {
       "Route": "uploads/SSMS.8t2t4yovyo.pdf",
       "AssetFile": "C:\\Users\\razan\\verficationSystem\\Backend\\DocumentVerification\\wwwroot\\uploads\\SSMS.pdf",

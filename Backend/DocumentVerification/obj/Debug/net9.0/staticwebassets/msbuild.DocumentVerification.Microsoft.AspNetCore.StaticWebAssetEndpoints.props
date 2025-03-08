@@ -1,5 +1,17 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/DocumentVerification/uploads/Ecommerce-main.tedpz76xkf.zip">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\Ecommerce-main.zip'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"tedpz76xkf"},{"Name":"integrity","Value":"sha256-29AhZz4qAKPAyKaYvODh2ZGttsVZIbQDXG1DDpLks/A="},{"Name":"label","Value":"_content/DocumentVerification/uploads/Ecommerce-main.zip"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"567127"},{"Name":"Content-Type","Value":"application/x-zip-compressed"},{"Name":"ETag","Value":"\u002229AhZz4qAKPAyKaYvODh2ZGttsVZIbQDXG1DDpLks/A=\u0022"},{"Name":"Last-Modified","Value":"Sat, 08 Mar 2025 06:50:35 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DocumentVerification/uploads/Ecommerce-main.zip">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\Ecommerce-main.zip'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-29AhZz4qAKPAyKaYvODh2ZGttsVZIbQDXG1DDpLks/A="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"567127"},{"Name":"Content-Type","Value":"application/x-zip-compressed"},{"Name":"ETag","Value":"\u002229AhZz4qAKPAyKaYvODh2ZGttsVZIbQDXG1DDpLks/A=\u0022"},{"Name":"Last-Modified","Value":"Sat, 08 Mar 2025 06:50:35 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/DocumentVerification/uploads/SSMS.8t2t4yovyo.pdf">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\SSMS.pdf'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

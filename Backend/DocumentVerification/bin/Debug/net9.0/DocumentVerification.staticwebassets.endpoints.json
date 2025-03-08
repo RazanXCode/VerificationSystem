@@ -3,6 +3,88 @@
   "ManifestType": "Build",
   "Endpoints": [
     {
+      "Route": "uploads/Ecommerce-main.tedpz76xkf.zip",
+      "AssetFile": "uploads/Ecommerce-main.zip",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "567127"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-zip-compressed"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"29AhZz4qAKPAyKaYvODh2ZGttsVZIbQDXG1DDpLks/A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 06:50:35 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tedpz76xkf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-29AhZz4qAKPAyKaYvODh2ZGttsVZIbQDXG1DDpLks/A="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/Ecommerce-main.zip"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/Ecommerce-main.zip",
+      "AssetFile": "uploads/Ecommerce-main.zip",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "567127"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-zip-compressed"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"29AhZz4qAKPAyKaYvODh2ZGttsVZIbQDXG1DDpLks/A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 06:50:35 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-29AhZz4qAKPAyKaYvODh2ZGttsVZIbQDXG1DDpLks/A="
+        }
+      ]
+    },
+    {
       "Route": "uploads/SSMS.8t2t4yovyo.pdf",
       "AssetFile": "uploads/SSMS.pdf",
       "Selectors": [],

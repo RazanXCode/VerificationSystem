@@ -18,7 +18,7 @@ export class DashboardComponent implements OnInit {
     this.loadDocuments();
   }
   loadDocuments(): void {
-    this.http.get<any>('http://localhost:5075/api/documents/3')  // Fetch single document
+    this.http.get<any>('http://localhost:5075/api/documents/2')  // Fetch single document
       .subscribe({
         next: (data) => {
           console.log('API Response:', data); // Debugging log
