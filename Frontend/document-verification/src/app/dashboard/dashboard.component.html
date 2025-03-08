@@ -1,0 +1,18 @@
+<div class="dashboard">
+    <h2>Document Detailes Dashboard</h2>
+    <div *ngIf="documents.length > 0; else noDocuments">
+      <ul>
+        <li *ngFor="let doc of documents">
+          <h3>{{ doc.name }}</h3>
+          <p>Title: {{ doc.title }}</p>
+          <p>Verification Code: {{ doc.verificationCode }}</p>
+          <p>Created on: {{ doc.createdAt | date }}</p>
+          <p>Status: {{ doc.status }}</p>
+        </li>
+      </ul>
+    </div>
+    <ng-template #noDocuments>
+      <p>No documents found.</p>
+    </ng-template>
+  </div>
+  

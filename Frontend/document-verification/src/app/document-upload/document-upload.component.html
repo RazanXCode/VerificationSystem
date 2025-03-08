@@ -1,0 +1,17 @@
+<div class="upload">
+    <h2>Upload Document</h2>
+    <form (ngSubmit)="uploadDocument()">
+      <div>
+        <label for="name">Document Name:</label>
+        <input type="text" id="name" [(ngModel)]="document.name" name="name" required />
+      </div>
+      <div>
+        <label for="file">Document File:</label>
+        <input type="file" id="file" (change)="onFileChange($event)" required />
+      </div>
+      <button type="submit" [disabled]="!document.name || !document.file">Upload</button>
+    </form>
+    <p>{{ message }}</p>
+  </div>
+  
+ 
