@@ -228,11 +228,17 @@ app.MapPost("/api/documents", async (MyAppContext db, HttpContext httpContext) =
 
 
 // GET /api/documents/{id} → Retrieve document details
-app.MapGet("/api/documents/{id}", async (MyAppContext db, int id) =>
+// app.MapGet("/api/documents/{id}", async (MyAppContext db, int id) =>
+// {
+//     var document = await db.Documents.FindAsync(id);
+//     return document is not null ? Results.Ok(document) : Results.NotFound("Document not found");
+// });
+app.MapGet("/api/documents/{userId}", async (MyAppContext db, int userId) =>
 {
-    var document = await db.Documents.FindAsync(id);
-    return document is not null ? Results.Ok(document) : Results.NotFound("Document not found");
+    var documents = await db.Documents.Where(d => d.UserId == userId).ToListAsync();
+    return documents.Any() ? Results.Ok(documents) : Results.NotFound("No documents found for this user.");
 });
+
 
 
 

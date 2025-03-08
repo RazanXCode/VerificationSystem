@@ -85,6 +85,88 @@
       ]
     },
     {
+      "Route": "uploads/Report.pdf",
+      "AssetFile": "uploads/Report.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1998068"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6PgZPlTfQRRoIRbpPWi1WwvlIqkA+0YBix25ITw8m0k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 07:40:49 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6PgZPlTfQRRoIRbpPWi1WwvlIqkA+0YBix25ITw8m0k="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/Report.sfv3bnl5pr.pdf",
+      "AssetFile": "uploads/Report.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1998068"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6PgZPlTfQRRoIRbpPWi1WwvlIqkA+0YBix25ITw8m0k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 07:40:49 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sfv3bnl5pr"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6PgZPlTfQRRoIRbpPWi1WwvlIqkA+0YBix25ITw8m0k="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/Report.pdf"
+        }
+      ]
+    },
+    {
       "Route": "uploads/SSMS.8t2t4yovyo.pdf",
       "AssetFile": "uploads/SSMS.pdf",
       "Selectors": [],
@@ -111,7 +193,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 08 Mar 2025 04:48:08 GMT"
+          "Value": "Sat, 08 Mar 2025 07:35:35 GMT"
         }
       ],
       "EndpointProperties": [
@@ -156,7 +238,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 08 Mar 2025 04:48:08 GMT"
+          "Value": "Sat, 08 Mar 2025 07:35:35 GMT"
         }
       ],
       "EndpointProperties": [

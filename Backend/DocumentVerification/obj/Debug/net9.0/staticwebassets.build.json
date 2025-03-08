@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Vxgz4VOe+nB4XKgRGIVVvQyv05qbIklmjpCYOwng6MY=",
+  "Hash": "jeL9CTN2NUmtPyynjz7ULAnG+HHkz4Ow2Gf7Mxc9Sk4=",
   "Source": "DocumentVerification",
   "BasePath": "_content/DocumentVerification",
   "Mode": "Default",
@@ -36,6 +36,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\Ecommerce-main.zip"
+    },
+    {
+      "Identity": "C:\\Users\\razan\\verficationSystem\\Backend\\DocumentVerification\\wwwroot\\uploads\\Report.pdf",
+      "SourceId": "DocumentVerification",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\razan\\verficationSystem\\Backend\\DocumentVerification\\wwwroot\\",
+      "BasePath": "_content/DocumentVerification",
+      "RelativePath": "uploads/Report#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "sfv3bnl5pr",
+      "Integrity": "6PgZPlTfQRRoIRbpPWi1WwvlIqkA+0YBix25ITw8m0k=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\Report.pdf"
     },
     {
       "Identity": "C:\\Users\\razan\\verficationSystem\\Backend\\DocumentVerification\\wwwroot\\uploads\\SSMS.pdf",
@@ -164,6 +185,88 @@
       ]
     },
     {
+      "Route": "uploads/Report.pdf",
+      "AssetFile": "C:\\Users\\razan\\verficationSystem\\Backend\\DocumentVerification\\wwwroot\\uploads\\Report.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1998068"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6PgZPlTfQRRoIRbpPWi1WwvlIqkA+0YBix25ITw8m0k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 07:40:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6PgZPlTfQRRoIRbpPWi1WwvlIqkA+0YBix25ITw8m0k="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/Report.sfv3bnl5pr.pdf",
+      "AssetFile": "C:\\Users\\razan\\verficationSystem\\Backend\\DocumentVerification\\wwwroot\\uploads\\Report.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1998068"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6PgZPlTfQRRoIRbpPWi1WwvlIqkA+0YBix25ITw8m0k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 07:40:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sfv3bnl5pr"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/Report.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6PgZPlTfQRRoIRbpPWi1WwvlIqkA+0YBix25ITw8m0k="
+        }
+      ]
+    },
+    {
       "Route": "uploads/SSMS.8t2t4yovyo.pdf",
       "AssetFile": "C:\\Users\\razan\\verficationSystem\\Backend\\DocumentVerification\\wwwroot\\uploads\\SSMS.pdf",
       "Selectors": [],
@@ -186,7 +289,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 08 Mar 2025 04:48:08 GMT"
+          "Value": "Sat, 08 Mar 2025 07:35:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -231,7 +334,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 08 Mar 2025 04:48:08 GMT"
+          "Value": "Sat, 08 Mar 2025 07:35:35 GMT"
         },
         {
           "Name": "Cache-Control",

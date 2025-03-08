@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\uploads\\Ecommerce-main.zip"
     },
     {
+      "Id": "C:\\Users\\razan\\verficationSystem\\Backend\\DocumentVerification\\wwwroot\\uploads\\Report.pdf",
+      "PackagePath": "staticwebassets\\uploads\\Report.pdf"
+    },
+    {
       "Id": "C:\\Users\\razan\\verficationSystem\\Backend\\DocumentVerification\\wwwroot\\uploads\\SSMS.pdf",
       "PackagePath": "staticwebassets\\uploads\\SSMS.pdf"
     },
