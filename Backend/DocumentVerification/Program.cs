@@ -123,26 +123,43 @@ app.MapGet("/api/documents/{userId}", async (MyAppContext db, int userId) =>
 // POST /api/verify → Verify a document using Dapper
 app.MapPost("/api/verify", async (HttpContext httpContext, SqlConnection conn) =>
 {
+    // Read the verification request from the body
     var request = await httpContext.Request.ReadFromJsonAsync<VerificationRequest>();
     if (request is null)
         return Results.BadRequest("Invalid request data");
 
-    // Query to get the document's verification status and count by matching VerificationCode
+    // Query to check the document's status using the VerificationCode and Document Id
     string query = @"
         SELECT Status
         FROM Documents 
         WHERE Id = @Id AND VerificationCode = @VerificationCode";
 
+    // Retrieve the document's current status
     var status = await conn.ExecuteScalarAsync<string>(query, new { request.Id, request.VerificationCode });
 
+    // If the document isn't found or the verification code is incorrect
     if (status == null)
         return Results.Json(new { message = "Invalid verification code or document not found." }, statusCode: 404); // Not Found
 
+    // If the document is already verified
     if (status == "Verified")
-        return Results.Ok("Document verified successfully!");
+        return Results.Ok("Document is already verified.");
 
-    return Results.Json(new { message = "Document verification failed." }, statusCode: 401); // Unauthorized
+    // Query to update the document status to 'Verified'
+    string updateQuery = @"
+        UPDATE Documents
+        SET Status = 'Verified'
+        WHERE Id = @Id AND VerificationCode = @VerificationCode";
+
+    // Execute the update
+    var rowsAffected = await conn.ExecuteAsync(updateQuery, new { request.Id, request.VerificationCode });
+
+    if (rowsAffected > 0)
+        return Results.Ok("Document verified successfully!");
+    else
+        return Results.Json(new { message = "Document verification failed." }, statusCode: 401); // Unauthorized
 });
+
 
 
 app.Run();
