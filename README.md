@@ -1,21 +1,31 @@
 # Document Verification System
 
 ## Overview
-The Document Verification System enables users to upload documents, generate a unique verification code for each document, and later check whether the document is verified using the verification code. The system is built using ASP.NET Core for the backend and Angular for the frontend, providing a seamless and efficient process for document management and verification.
+The Document Verification System allows users to easily upload documents, each associated with a unique verification code, and manage them on a dashboard. Admins can verify the uploaded documents using the verification code, and the document status is updated dynamically. Users can see the verification status of their documents in real-time.
 
-## Features
-- **View Dashboard:** Users can access a dashboard that displays all the details of their documents.
-- **Upload Documents:** Users can upload files (PDF, DOC, DOCX) along with a name, which are then stored in the database with a unique verification code.
-- **Document Verification:** Users can check whether the admin has verified their document by submitting the unique verification code.
+## Project Features
+**1. View Dashboard**
 
+Users can access a dashboard that displays all details of their documents, including the name, upload status, and verification status.
+
+**2. Upload Documents**
+
+Users can upload their documents (PDF, DOC, DOCX formats) through a simple form.
+Each document requires a title and must be associated with a file.
+Upon successful upload, the document is stored in the database along with a unique verification code, which will be used for the verification process.
+
+**3. Document Verification**
+
+Admins have the ability to verify documents by providing the Document ID and Verification Code.
+Users can check the verification status of their documents in the dashboard.
+
+---
 
 ## Technologies Used
 - **Backend:** ASP.NET Core, Entity Framework Core, Dapper
 - **Frontend:** Angular
 - **Database:** SQL Server
 
-
----
 
 ## Setup Instructions
 
@@ -28,35 +38,38 @@ The Document Verification System enables users to upload documents, generate a u
 
 ### Backend Setup
 1. Clone the repository:
-   git clone https://github.com/yourusername/document-verification-system.git
-   cd document-verification-system
+   
+   `git clone https://github.com/yourusername/document-verification-system.git
+   cd document-verification-system`
 
-2. Restore NuGet packages:
-   dotnet restore
+3. Restore NuGet packages:
+   
+   `dotnet restore`
 
   
-3. Configure your database connection in the appsettings.json file:
-"ConnectionStrings": {
+5. Configure your database connection in the appsettings.json file:
+   
+`"ConnectionStrings": {
     "DefaultConnection": "Server=your_server;Database=DocumentVerificationDb;User Id=your_user;Password=your_password;"
-}
+}`
 
 
 
-4.  Apply database migrations and seed the database:
-  "ConnectionStrings": {
-      "DefaultConnection": "Server=your_server;Database=DocumentVerificationDb;User Id=your_user;Password=your_password;"
-  }
+7.  Apply database migrations and seed the database:
+   
+  `dotnet ef migrations add InitialCreate
+dotnet ef migrations add InitialCreate
+`
 
 ### Frontend Setup
 
-1. Navigate to the `Frontend` folder: 
-   cd Frontend
+1. Navigate to the `Frontend` folder, then
+`cd Frontend`
+   
 
 2. Start the development server:
-   ng serve
-
-
-
+   
+   `ng serve`
 
 
 
