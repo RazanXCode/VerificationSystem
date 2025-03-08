@@ -161,3 +161,4 @@ C:\Users\razan\verficationSystem\Backend\DocumentVerification\obj\Debug\net9.0\D
 C:\Users\razan\verficationSystem\Backend\DocumentVerification\obj\Debug\net9.0\DocumentVerification.genruntimeconfig.cache
 C:\Users\razan\verficationSystem\Backend\DocumentVerification\obj\Debug\net9.0\ref\DocumentVerification.dll
 C:\Users\razan\verficationSystem\Backend\DocumentVerification\bin\Debug\net9.0\DocumentVerification.staticwebassets.runtime.json
+C:\Users\razan\verficationSystem\Backend\DocumentVerification\obj\Debug\net9.0\DocumentVerification.sourcelink.json
